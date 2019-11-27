@@ -1,6 +1,11 @@
 ﻿module.exports = {
-    entry: { main: './src/customer/customer.js' },
+    entry:
+    {
+        shared: './src/shared.js',
+        home: './src/home/home.js',
+        customer: './src/customer/customer.js'
+    },
     output: {
-        filename: '../wwwroot/js/customer.js'
+        filename: '../wwwroot/js/[name].js'
     }
 };

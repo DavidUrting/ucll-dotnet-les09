@@ -1,5 +1,10 @@
 ﻿@model AdventureWorks.Web.Models.SearchViewModel
 
+@{
+    Layout = "_CustomerLayout";
+    ViewData["Title"] = "Search";
+}
+
 <h1>@Model.Subtitle</h1>
 <hr />
 <div class="row">
@@ -35,7 +40,6 @@
 
 @section Scripts {
     @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
-    <script src="/js/customer.js"></script>
 }
 
 <div>
