@@ -7,5 +7,16 @@
     },
     output: {
         filename: '../wwwroot/js/[name].js'
+    },
+    optimization: {
+        splitChunks: {
+            cacheGroups: {
+                vendor: {
+                    test: /[\\/]node_modules[\\/](jquery)[\\/]/,
+                    name: 'vendor',
+                    chunks: 'all'
+                }
+            }
+        }
     }
 };

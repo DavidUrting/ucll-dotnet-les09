@@ -8,5 +8,8 @@
   },
   "scripts": {
     "watch": "webpack --watch"
+  },
+  "dependencies": {
+    "jquery": "^3.4.1"
   }
 }

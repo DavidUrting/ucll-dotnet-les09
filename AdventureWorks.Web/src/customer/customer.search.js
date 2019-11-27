@@ -1,4 +1,6 @@
-﻿if (document.getElementById("searchButton") !== null) {
+﻿import $ from "jquery";
+
+if (document.getElementById("searchButton") !== null) {
     document.getElementById("searchButton").addEventListener("click", function (e) {
         // vorige resultaten leegmaken.
         $("#customers tbody tr").remove();
